@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2 class="logo">MyPortfolio</h2>
+            <ul id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p>Hello, I'm</p>
+            <h1>Your Name</h1>
+            <h3>Computer Engineering Student</h3>
+            <p>I am passionate about web development
+               and creating user-friendly websites.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-box">
+            <div class="profile">👩‍💻</div>
+            <p>
+                Hello! I am a Computer Engineering student
+                interested in web development and programming.
+                I enjoy learning new technologies and building
+                creative projects using HTML, CSS and JavaScript.
+                My goal is to become a skilled software developer.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="cards">
+            <div class="card">HTML5</div>
+            <div class="card">CSS3</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Java</div>
+            <div class="card">MySQL</div>
+            <div class="card">Responsive Design</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="cards">
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>A website to showcase my skills,
+                   education and projects.</p>
+            </div>
+            <div class="project-card">
+                <h3>To-Do List App</h3>
+                <p>A simple application to manage
+                   daily tasks.</p>
+            </div>
+            <div class="project-card">
+                <h3>Blog Website</h3>
+                <p>A website to publish and display
+                   articles and blog posts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name"
+                   placeholder="Your Name" required>
+            <input type="email" id="email"
+                   placeholder="Your Email" required>
+            <textarea id="message"
+                      placeholder="Your Message"
+                      required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="response"></p>
+        <p class="email">Email: yourname@example.com</p>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> Your Name.
+           All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
